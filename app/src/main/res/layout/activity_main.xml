@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backroundd"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/calcul"
+        android:layout_width="221dp"
+        android:layout_height="76dp"
+
+        android:layout_below="@+id/birthday"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonshapo"
+        android:onClick="startt"
+        android:text="Calculate"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="182dp"
+        android:layout_height="56dp"
+
+        android:layout_below="@+id/calcul"
+        android:layout_toEndOf="@+id/textView3"
+        android:background="@drawable/buttonshapo"
+        android:onClick="startt"
+        android:text=" Reset"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:hint="DD"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/birthmonth"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/birthday"
+        android:layout_toStartOf="@+id/birthyear"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/birthyear"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/calcul"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="YYYY"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Enter your birthday"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/Monthss"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Yearss"
+
+        android:text="Months : "
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Dayss"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Monthss"
+        android:text="Day : "
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Secondss"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Hourss"
+        android:text="Seconds : "
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Hourss"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Dayss"
+        android:text="Hours : "
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Yearss"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="273dp"
+        android:text="Years : "
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="220dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/calcul"
+        android:text='If you see the Seconds to accelerate click ""Reset""'
+        android:textSize="19sp" />
+
+
+</RelativeLayout>
